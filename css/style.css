@@ -10,7 +10,6 @@
 }
 
 :root {
-    /* cores: dark theme*/
     --fundo-body: #151515;
     --section-color: #1d1d1d;
     --cor-fontes: #FBFBFB;
@@ -18,12 +17,10 @@
     --destaque: #4de29f;
     --cor-hover: #4c4c4c;
 
-    /* fontes */
     --fonte: 'Poppins', sans-serif;
 }
 
 .light_mode:root {
-    /* cores: light theme */
     --fundo-body: #e1e1e1;
     --section-color: #c1bfbf;
     --cor-fontes: #101010;
@@ -31,7 +28,6 @@
     --destaque: #4db5e2;
     --cor-hover: #828282;
 
-    /* fontes */
     --fonte: 'Poppins', sans-serif;
 }
 
@@ -263,25 +259,30 @@ button.contact::after {
 
 .bloco2 {
     display: flex;
-    margin: 90px 0px;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.bloco2>h1 {
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 60px;
+    text-align: left;
+    width: 100%;
 }
 
 .linguagens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* Cria 3 colunas iguais */
     gap: 20px;
-    /* Espaçamento entre as colunas */
 }
 
 .linguagens>div {
     font-size: 40px;
     font-weight: 500;
     flex-basis: 30%;
-    /* Define a largura de cada coluna */
     padding: 10px;
-    /* Espaçamento interno */
 }
 
 .linguagens>div>p {
@@ -309,9 +310,7 @@ button.contact::after {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    /* Cria 3 colunas iguais */
     gap: 5px;
-    /* Espaçamento entre as colunas */
 }
 
 .projetos>.poj>a {
@@ -598,6 +597,10 @@ footer {
         padding: 10px;
     }
 
+    .fa-code, .fa-gamepad, .fa-flask {
+        display: none;
+    }
+
     .links {
         display: grid;
         justify-content: center;
@@ -694,7 +697,6 @@ footer {
         font-size: 40px;
         font-weight: 500;
         padding: 10px;
-        /* Espaçamento interno */
     }
 
     .poj {
@@ -702,9 +704,7 @@ footer {
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
-        /* Adicionado para cortar a borda ao escalar */
         transition: background-color 0.3s;
-        /* Adicionado para uma transição suave de cor */
     }
 
     .poj img {
@@ -834,8 +834,6 @@ footer {
 
 }
 
-/* Para telas menores que 768px (exemplo: smartphones) */
-
 @media only screen and (min-width: 451px) and (max-width: 780px) {
 
     section {
@@ -911,7 +909,7 @@ footer {
         justify-items: center;
     }
 
-    .bloco2 > h1 {
+    .bloco2>h1 {
         font-size: 45px;
         line-height: 55px;
         margin-bottom: 60px;
@@ -932,7 +930,6 @@ footer {
         font-size: 40px;
         font-weight: 500;
         padding: 10px;
-        /* Espaçamento interno */
     }
 
     .poj {
@@ -940,9 +937,7 @@ footer {
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
-        /* Adicionado para cortar a borda ao escalar */
         transition: background-color 0.3s;
-        /* Adicionado para uma transição suave de cor */
     }
 
     .poj img {
@@ -1081,10 +1076,8 @@ footer {
         left: calc(19% - 0px);
     }
 
-    /* Adicione mais ajustes conforme necessário */
 }
 
-/* Para telas entre 481px e 768px (exemplo: tablets) */
 @media only screen and (min-width: 781px) and (max-width: 888px) {
 
     section {
@@ -1107,9 +1100,7 @@ footer {
     .projetos {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        /* Cria 3 colunas iguais */
         gap: 20px;
-        /* Espaçamento entre as colunas */
     }
 
     .poj {
@@ -1117,9 +1108,7 @@ footer {
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
-        /* Adicionado para cortar a borda ao escalar */
         transition: background-color 0.3s;
-        /* Adicionado para uma transição suave de cor */
     }
 
     .poj img {
