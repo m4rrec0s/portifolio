@@ -1,0 +1,48 @@
+Dados:
+
+nome: @marcos
+
+description: Nice to meet you! *I'm Marcos*
+I'm a JavaScript and Python programmer. I develop websites in HTML5 and CSS3. I have knowledge in Web Design and Digital Design as a whole.</p>
+
+Button type="button" class="contact": CONTACT ME
+
+links:
+
+Github: https://github.com/m4rrec0s"
+Instagram: https://www.instagram.com/marcos_henrique_eu/
+LinkedIn: https://www.linkedin.com/in/marcos-henrique-ara%C3%BAjo-7a641a242/
+X: https://twitter.com/Marrecos_
+
+Contact:
+
+Did you like my portfolio? So don't waste time and contact me right now! I am a qualified professional, creative and committed to my clients. I can help you carry out your projects with efficiency and quality. Just fill out the form and I will respond as quickly as possible.
+
+FORM:
+
+```
+
+<form action="https://formsubmit.co/marcos_rique@outlook.com" method="POST">
+                <div class="input-container animated-input">
+                    <input name="Nome" type="text" id="nome" required>
+                    <label for="nome">NAME</label>
+                </div>
+                <div class="input-container animated-input">
+                    <input name="Email" type="email" id="email" required>
+                    <label for="email">EMAIL</label>
+                </div>
+                <div class="input-container textarea-container animated-input">
+                    <textarea name="Mensagem" id="msg" rows="4" required></textarea>
+                    <label for="msg" id="msg-label">MESSAGE</label>
+                </div>
+                <button type="submit" class="contact footer-button">SEND MESSAGE</button>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Novo envio!">
+                <input type="hidden" name="_autoresponse"
+                    value="Obrigado por ter entrado em contato comigo. Já estou analizando sua mensagem e logo logo entro em contato com você!">
+                <input type="hidden" name="_next"
+                    value="https://m4rrec0s.github.io/HTML5-e-CSS3/portifolio/obrigado.html">
+            </form>
+
+```

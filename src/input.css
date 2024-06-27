@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
-    --bg-body-rgb: #151515;
+    --bg-body-rgb: #000000;
     --bg-section-rgb: #1d1d1d;
     --text-color-rgb: #FBFBFB;
     --text-color-footer-rgb: #FBFBFB;
     --highlight-rgb: #4de29f;
-    --hover-color-rgb: #4c4c4c;
+    --hover-color-rgb: #267953;
+    --nav-color-rgb: #00000086;
 
     --font-family: 'Poppins', sans-serif;
 }
@@ -19,12 +22,19 @@
     --text-color-rgb: #101010;
     --text-color-footer-rgb: #FBFBFB;
     --highlight-rgb: #4db5e2;
-    --hover-color-rgb: #828282;
+    --hover-color-rgb: #327997;
+    --nav-color-rgb: #e1e1e186;
 
     --font-family: 'Poppins', sans-serif;
 }
 
 @layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body {
         background-color: var(--bg-body-rgb);
         font-family: var(--font-family);
@@ -38,15 +48,33 @@
 }
 
 @layer components {
-    .section-container {
-        background-color: var(--section-color);
-        width: 100%;
-        max-width: 850px;
-        height: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        transition: background-color 1s ease-in-out, color 0.3s ease-in;
-        z-index: 5;
+    .line {
+        border: 1px solid var(--text-color-rgb);
+        width: 90%;
+        opacity: 0.5;
+
+    }
+
+    .gradient {
+        background: linear-gradient(90deg, var(--bg-body-rgb), var(--highlight-rgb));
+        padding: 10px;
+    }
+
+    .button-primary {
+        background-color: var(--highlight-rgb);
+        color: var(--text-color-rgb);
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 1px solid var(--text-color-rgb);
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 2px 8px var(--highlight-rgb);
+    }
+
+    .button-primary:hover {
+        background-color: var(--hover-color-rgb);
+        border: none;
+        box-shadow: 0 0px 15px var(--highlight-rgb);
     }
 }
 
@@ -67,11 +95,27 @@
         color: var(--text-color-footer-rgb);
     }
 
+    .text-primary {
+        color: var(--highlight-rgb);
+    }
+
     .bg-primary {
         background-color: var(--highlight-rgb);
     }
 
     .bg-hover-color {
         background-color: var(--hover-color-rgb);
+    }
+
+    .border-primary {
+        border-color: var(--highlight-rgb);
+    }
+
+    .underline-primary {
+        border-bottom: 2px solid var(--highlight-rgb);
+    }
+
+    .bg-nav {
+        background-color: var(--nav-color-rgb);
     }
 }
