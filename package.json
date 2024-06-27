@@ -1,0 +1,15 @@
+{
+  "name": "portifolio",
+  "version": "1.0.0",
+  "description": "> [!NOTE]\r > Acesse [aqui](https://m4rrec0s.github.io/portifolio/) meu Portifólio.",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

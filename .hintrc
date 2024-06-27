@@ -9,7 +9,15 @@
         "link-name": "off"
       }
     ],
-    "axe/forms": "off"
+    "axe/forms": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "div[translate]"
+        ]
+      }
+    ]
   },
   "browserslist": [
     "defaults",

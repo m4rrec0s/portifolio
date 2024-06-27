@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-body-rgb: #151515;
+    --bg-section-rgb: #1d1d1d;
+    --text-color-rgb: #FBFBFB;
+    --text-color-footer-rgb: #FBFBFB;
+    --highlight-rgb: #4de29f;
+    --hover-color-rgb: #4c4c4c;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+.light_mode:root {
+    --bg-body-rgb: #e1e1e1;
+    --bg-section-rgb: #c1bfbf;
+    --text-color-rgb: #101010;
+    --text-color-footer-rgb: #FBFBFB;
+    --highlight-rgb: #4db5e2;
+    --hover-color-rgb: #828282;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+@layer base {
+    body {
+        background-color: var(--bg-body-rgb);
+        font-family: var(--font-family);
+        color: var(--text-color-rgb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: background-color 1s ease-in-out, color 0.3s ease-in;
+    }
+}
+
+@layer components {
+    .section-container {
+        background-color: var(--section-color);
+        width: 100%;
+        max-width: 850px;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: background-color 1s ease-in-out, color 0.3s ease-in;
+        z-index: 5;
+    }
+}
+
+@layer utilities {
+    .bg-background {
+        background-color: var(--bg-body-rgb);
+    }
+
+    .bg-section {
+        background-color: var(--bg-section-rgb);
+    }
+
+    .text-color {
+        color: var(--text-color-rgb);
+    }
+
+    .text-color-footer {
+        color: var(--text-color-footer-rgb);
+    }
+
+    .bg-primary {
+        background-color: var(--highlight-rgb);
+    }
+
+    .bg-hover-color {
+        background-color: var(--hover-color-rgb);
+    }
+}
