@@ -15,7 +15,7 @@
 <body class="mt-[70px]">
 
     <!-- Toogle Theme -->
-    <div class="fixed flex justify-between top-0 right-0 w-full p-5 bg-nav">
+    <div class="fixed flex justify-between top-0 right-0 w-full p-5 bg-nav z-10">
         <p class="font-semibold">@marcos</p>
         <div class="flex items-center gap-3">
             <nav class="space-x-3">
@@ -38,7 +38,7 @@
     </div>
 
     <!-- Header -->
-    <header class="w-[100vw] flex flex-col items-center p-6 h-[90vh]">
+    <header id="header" class="w-[100vw] flex flex-col items-center p-6 h-[90vh]">
 
         <div class="flex flex-col items-center w-full max-w-[800px]">
             <img src="../imagens/marcos.png" alt="Marcos Henrique"
@@ -67,7 +67,7 @@
     </header>
     <div class="line"></div>
 
-    <section class="w-full flex flex-col py-3 items-center mt-10">
+    <section id="sec1" class="w-full flex flex-col items-center my-10">
         <div class="container px-4">
             <div class=" flex flex-col items-center">
                 <h2 class="w-full text-2xl font-bold text-center">TECHNOLOGIES I AM FAMILIAR WITH</h2>
@@ -117,8 +117,21 @@
         </div>
     </section>
 
+    <div class="line"></div>
 
+    <section id="sec2" class="w-full flex flex-col py-3 items-center my-10">
+        <div class="container px-4">
+            <div class="flex flex-col items-center">
+                <h2 class="w-full text-2xl font-bold text-center">MY PROJECTS</h2>
+                <div id="projects-container" class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
 
 </html>
