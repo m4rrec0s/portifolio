@@ -617,21 +617,56 @@ body {
 }
 
 .button-primary {
-  background-color: var(--highlight-rgb);
-  color: var(--text-color-rgb);
-  font-weight: bold;
-  padding: 10px 20px;
-  border: 1px solid var(--text-color-rgb);
-  border-radius: 5px;
+  position: relative;
+  margin-top: 20px;
+  background-color: transparent;
+  color: var(--cor-fontes-footer);
+  border: none;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 3px;
   cursor: pointer;
-  box-shadow: 0 2px 8px var(--highlight-rgb);
+}
+
+.button-primary::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, var(--highlight-rgb) 0%, var(--highlight-rgb) 50%, transparent 50%, transparent 100%);
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  animation: moveBackground 2s linear infinite;
+}
+
+.button-primary:hover::before {
+  background-position: -100% 0;
+  background-color: var(--highlight-rgb);
 }
 
 .button-primary:hover {
-  background-color: var(--hover-color-rgb);
-  border: none;
-  box-shadow: 0 0px 15px var(--highlight-rgb);
+  text-decoration: none;
 }
+
+/* .button-primary {
+        background-color: var(--highlight-rgb);
+        color: var(--text-color-rgb);
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 2px solid var(--text-color-rgb);
+        border-radius: 5px;
+        cursor: pointer;
+        /* box-shadow: 0 2px 8px var(--highlight-rgb); */
+
+/* animation: border-animation 5s alternate infinite; */
+
+/* .button-primary:hover {
+        background-color: var(--hover-color-rgb);
+       
+
+        /* box-shadow: 0 0px 15px var(--highlight-rgb); */
 
 .fixed {
   position: fixed;
@@ -781,6 +816,11 @@ body {
   padding-right: 1rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -822,9 +862,8 @@ body {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-400 {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity));
+.opacity-60 {
+  opacity: 0.6;
 }
 
 .shadow-md {
@@ -856,7 +895,7 @@ body {
   --text-color-footer-rgb: #FBFBFB;
   --highlight-rgb: #4de29f;
   --hover-color-rgb: #267953;
-  --nav-color-rgb: #00000086;
+  --nav-color-rgb: #000000b0;
   --font-family: 'Poppins', sans-serif;
 }
 
@@ -867,8 +906,18 @@ body {
   --text-color-footer-rgb: #FBFBFB;
   --highlight-rgb: #4db5e2;
   --hover-color-rgb: #327997;
-  --nav-color-rgb: #e1e1e186;
+  --nav-color-rgb: #e1e1e1b0;
   --font-family: 'Poppins', sans-serif;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 100% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
 }
 
 .hover\:text-primary:hover {
