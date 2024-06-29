@@ -1,0 +1,51 @@
+{
+  "projects": [
+    {
+      "id": 4,
+      "name": "Spotify Replica",
+      "description": "Uma réplica do Spotify feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "../imagens/spotify.png",
+      "url": "https://m4rrec0s.github.io/JavaScript/music-app/",
+      "technologies": ["HTML", "CSS", "JS", "JSON"]
+    },
+    {
+      "id": 5,
+      "name": "Age Calculator",
+      "description": "Uma calculadora de idade feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "../imagens/desktop-completed.jpg",
+      "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/portifolio/age_calculator/",
+      "technologies": ["HTML", "CSS", "JS"]
+    },
+    {
+      "id": 6,
+      "name": "TaskList App",
+      "description": "`Plataforma de treinos e exercícios físicos criada usando fremeworks como: Nextjs e Tailwindcss. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades tando no front-end quanto no back-end.`",
+      "imgUrl": "../imagens/project-tasklist.png",
+      "url": "https://tasklist-app-eight.vercel.app/",
+      "technologies": [
+        "Nextjs",
+        "Tailwindcss",
+        "TS",
+        "Prisma",
+        "PostgreSQL",
+        "Figma"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Login Screen",
+      "description": "Tela de login feita com HTML, CSS e JavaScript. Com ele, desenvolvi habilidades de animação e responsividade usando o CSS e JavaScript.",
+      "imgUrl": "../imagens/login.png",
+      "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/Pr%C3%A1tica/login/login.html",
+      "technologies": ["HTML", "CSS", "JS"]
+    },
+    {
+      "id": 9,
+      "name": "Calculator Windows 11",
+      "description": "Projeto de uma calculadora inspirada no Windows 11 feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "../imagens/calculadora-win11.png",
+      "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/Calculadora/calculadora.html",
+      "technologies": ["HTML", "CSS", "JS"]
+    }
+  ]
+}

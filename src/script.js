@@ -2,8 +2,8 @@ window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('#header', { distance: '50px', duration: 1000 });
 sr.reveal('#sec1', { distance: '70px', duration: 1500 });
-sr.reveal('#sec2', { distance: '50px', duration: 1000 });
-// sr.reveal('.poj', { distance: '50px', interval: 30, reset: true, duration: 2000 });
+// sr.reveal('#sec2', { distance: '100px', duration: 1500 });
+sr.reveal('.item-project', { distance: '50px', interval: 30, reset: true, duration: 2000 });
 // sr.reveal('footer', { distance: '50px', duration: 1500 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -48,39 +48,35 @@ $toggleTheme.addEventListener('change', function () {
     $html.classList.toggle('light_mode');
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('DOM totalmente carregado e analisado');
-    
-    fetch('projects.json')
+
+fetch('projects.json')
     .then(response => {
         if (!response.ok) {
-            throw new Error('Erro ao carregar o arquivo JSON');
+            throw new Error('Erro ao carregar o JSON');
         }
-        console.log('Arquivo JSON carregado com sucesso');
         return response.json();
     })
-    .then(projects => {
-        console.log('Dados do JSON:', projects);
-        
-        const projectsContainer = document.getElementById('projects-container');
-        if (!projectsContainer) {
-            console.error('Elemento projects-container não encontrado');
-            return;
-        }
-        
-        projects.forEach(project => {
-            const projectElement = document.createElement('div');
-            projectElement.classList.add('item-project');
-            projectElement.innerHTML = `
-                <div class="project-card">
-                    <img src="${project.imgUrl}" alt="${project.name}">
-                    <h3>${project.name}</h3>
-                    <p>${project.description}</p>
-                    <a href="${project.url}" target="_blank">Ver Projeto</a>
-                </div>
-            `;
-            projectsContainer.appendChild(projectElement);
-        });
+    .then(data => {
+        showProjects(data);
     })
-    .catch(error => console.error('Erro ao carregar os projetos:', error));
-});
+    .catch(error => console.error('Erro ao carregar projetos:', error));
+
+function showProjects(data) {
+    const container = document.getElementById('projects');
+    const projects = data.projects || data;
+    projects.forEach(project => {
+        const projectElement = document.createElement('div');
+        projectElement.innerHTML = `
+            <div class="item-project">
+                <img src="${project.imgUrl}" alt="${project.name}">
+                <h3>${project.name}</h3>
+                
+                <div class="flex justify-center flex-wrap mb-2">
+                    ${project.technologies.map(tag => `<span class="bg-nav text-sm opacity-70 p-2 rounded-lg m-1">${tag}</span>`).join('')}
+                </div>
+                <a href="${project.url}" target="_blank">Ver Projeto</a>
+            </div>
+        `;
+        container.appendChild(projectElement);
+    });
+}

@@ -38,7 +38,7 @@
     </div>
 
     <!-- Header -->
-    <header id="header" class="w-[100vw] flex flex-col items-center p-6 h-[90vh]">
+    <header id="header" class="w-[100vw] flex flex-col lg:gird grid-cols-2 items-center p-6 h-[90vh]">
 
         <div class="flex flex-col items-center w-full max-w-[800px]">
             <img src="../imagens/marcos.png" alt="Marcos Henrique"
@@ -47,7 +47,7 @@
             <!-- <img src="../imagens/marcos.png" alt="Marcos Henrique"
                 class="max-sm:w-[300px] max-sm:h-[300px] border border-primary rounded-full"> -->
 
-            <div class="flex flex-col items-center w-full">
+            <div class="flex flex-col items-center w-full ">
                 <div class="max-w-[300px] text-center">
                     <div class="text-left">
                         <h1 class="text-sm">Hello, <strong class="underline-primary">I'm</strong></h1>
@@ -123,15 +123,41 @@
         <div class="container px-4">
             <div class="flex flex-col items-center">
                 <h2 class="w-full text-2xl font-bold text-center">MY PROJECTS</h2>
-                <div id="projects-container" class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div id="projects" class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 </div>
             </div>
         </div>
     </section>
 
+    <footer class="grid grid-cols-1 mt-6 sm:grid-cols-2 pt-6 bg-footer w-full rounded-l-lg rounded-r-lg">
+        <div class="flex flex-col p-3">
+            <h2 class="text-2xl font-bold text-center">CONTACT ME</h2>
+            <p class="text-center opacity-70 mt-4">Feel free to contact me for any project or collaboration.</p>
+        </div>
+        <form action="https://formsubmit.co/marcos_rique@outlook.com" method="POST">
+            <div class="input-container animated-input">
+                <input name="Nome" type="text" id="nome" class="underline-primary" required>
+                <label for="nome">NAME</label>
+            </div>
+            <div class="input-container animated-input">
+                <input name="Email" type="email" id="email" class="underline-primary" required>
+                <label for="email">EMAIL</label>
+            </div>
+            <div class="input-container textarea-container animated-input">
+                <textarea name="Mensagem" id="msg" rows="4" class="underline-primary" required></textarea>
+                <label for="msg" id="msg-label">MESSAGE</label>
+            </div>
+            <button type="submit" class="button-primary">SEND MESSAGE</button>
 
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="Novo envio!">
+            <input type="hidden" name="_autoresponse"
+                value="Obrigado por ter entrado em contato comigo. Já estou analizando sua mensagem e logo logo entro em contato com você!">
+            <input type="hidden" name="_next" value="./obrigado.html">
+        </form>
+    </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
