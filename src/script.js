@@ -3,29 +3,13 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal('#header', { distance: '50px', duration: 1000 });
 sr.reveal('#sec1', { distance: '70px', duration: 1500 });
 // sr.reveal('#sec2', { distance: '100px', duration: 1500 });
-sr.reveal('.item-project', { distance: '50px', interval: 30, reset: true, duration: 2000 });
+sr.reveal('#projects', { distance: '50px', interval: 30, reset: true, duration: 2000 });
 // sr.reveal('footer', { distance: '50px', duration: 1500 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    // Obtenha uma NodeList de botões com a classe .contact
-    var btnsScrollToContato = document.querySelectorAll('.contact');
-    var secaoContato = document.querySelector('#main_footer');
-
-    function easeInOutExpo(x) {
-        return x === 0 ? 0 : x === 1 ? 1 : x < 0.5 ? Math.pow(2, 20 * x - 10) / 2 : (2 - Math.pow(2, -20 * x + 10)) / 2;
-    }
-
-    btnsScrollToContato.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            secaoContato.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-                inline: 'start',
-                easing: easeInOutExpo
-            });
-        });
-    });
-});
+//função scrollToFooter para rolar a página até o footer
+function scrollToFooter() {
+    document.querySelector('footer').scrollIntoView({ behavior: 'smooth'});
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const animatedInputs = document.querySelectorAll(".animated-input input, .animated-input textarea");
