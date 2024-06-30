@@ -1111,8 +1111,8 @@ input:focus+label {
   height: 90vh;
 }
 
-.w-\[100vw\] {
-  width: 100vw;
+.w-\[full\] {
+  width: full;
 }
 
 .w-\[this-is\\\\\] {
@@ -1129,10 +1129,6 @@ input:focus+label {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[full\] {
-  width: full;
 }
 
 .max-w-\[300px\] {
@@ -2465,6 +2461,16 @@ input:focus+label {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2865,14 +2871,6 @@ input:focus+label {
   background-color: var(--footer-color-rgb);
 }
 
-.\[-ms-overflow-style\:none\] {
-  -ms-overflow-style: none;
-}
-
-.\[scrollbar-width\:none\] {
-  scrollbar-width: none;
-}
-
 :root {
   --bg-body-rgb: #000000;
   --bg-section-rgb: #1d1d1d;
@@ -3013,8 +3011,4 @@ input:focus+label {
       paint-order: markers;
     }
   }
-}
-
-.\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
-  display: none;
 }
