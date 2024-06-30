@@ -2,8 +2,8 @@ window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('#header', { distance: '50px', duration: 1000 });
 sr.reveal('#sec1', { distance: '70px', duration: 1500 });
-// sr.reveal('#sec2', { distance: '100px', duration: 1500 });
-sr.reveal('#projects', { distance: '50px', interval: 30, reset: true, duration: 2000 });
+sr.reveal('.item-project', { distance: '100px', duration: 1500 });
+// sr.reveal('.item-project', { distance: '50px', interval: 30, reset: true, duration: 2000 });
 // sr.reveal('footer', { distance: '50px', duration: 1500 });
 
 //função scrollToFooter para rolar a página até o footer
