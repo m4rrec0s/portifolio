@@ -919,6 +919,22 @@ input:focus+label {
   top: 0px;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-14 {
+  left: 3.5rem;
+}
+
+.left-\[50px\] {
+  left: 50px;
+}
+
+.left-\[70px\] {
+  left: 70px;
+}
+
 .isolate {
   isolation: isolate;
 }
@@ -1111,6 +1127,30 @@ input:focus+label {
   height: 90vh;
 }
 
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[250px\] {
+  height: 250px;
+}
+
+.h-\[350px\] {
+  height: 350px;
+}
+
+.max-h-\[350px\] {
+  max-height: 350px;
+}
+
 .w-\[full\] {
   width: full;
 }
@@ -1131,12 +1171,37 @@ input:focus+label {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[400px\] {
+  width: 400px;
+}
+
+.w-\[250px\] {
+  width: 250px;
+}
+
+.w-\[350px\] {
+  width: 350px;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
 }
 
 .max-w-\[800px\] {
   max-width: 800px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .flex-shrink {
@@ -2461,11 +2526,6 @@ input:focus+label {
   color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
-}
-
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
@@ -2523,6 +2583,10 @@ input:focus+label {
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-0 {
+  opacity: 0;
 }
 
 .bg-blend-normal {
@@ -2977,15 +3041,43 @@ input:focus+label {
   .max-sm\:w-\[300px\] {
     width: 300px;
   }
+
+  .max-sm\:items-center {
+    align-items: center;
+  }
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .sm\:mt-\[200px\] {
+    margin-top: 200px;
+  }
+
+  .sm\:block {
+    display: block;
+  }
+
+  .sm\:grid {
+    display: grid;
+  }
+
   .sm\:hidden {
     display: none;
   }
 
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 
   .sm\:underline {
