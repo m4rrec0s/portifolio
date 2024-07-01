@@ -53,10 +53,10 @@ function showProjects(data) {
         projectElement.innerHTML = `
             <div class="item-project">
                 <img src="${project.imgUrl}" alt="${project.name}">
-                <h3>${project.name}</h3>
+                <h3 class="mb-4">${project.name}</h3>
                 
-                <div class="flex justify-center flex-wrap mb-2">
-                    ${project.technologies.map(tag => `<span class="bg-nav text-sm opacity-70 p-2 rounded-lg m-1">${tag}</span>`).join('')}
+                <div class="h-[50px] w-full flex overflow-x-scroll mb-2 [&::-webkit-scrollbar]:hidden">
+                    ${project.technologies.map(tag => `<span class="bg-nav h-fit text-sm opacity-70 p-2 rounded-lg m-1">${tag}</span>`).join('')}
                 </div>
                 <a href="${project.url}" target="_blank">Ver Projeto</a>
             </div>

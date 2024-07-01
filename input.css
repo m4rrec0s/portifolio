@@ -225,6 +225,7 @@
         align-items: center;
         justify-content: center;
         padding: 20px;
+        min-width: 200px;
 
         border-radius: 10px;
         background-color: var(--bg-section-rgb);
@@ -246,9 +247,6 @@
         transition: all 0.3s ease-in-out;
     }
 
-    .item-project>p {
-        max-height: 200px;
-    }
 
     .item-project>h3 {
         margin-top: 10px;
