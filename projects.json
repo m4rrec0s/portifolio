@@ -1,20 +1,19 @@
 {
   "projects": [
     {
-      "id": 4,
-      "name": "Spotify Replica",
-      "description": "Uma réplica do Spotify feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
-      "imgUrl": "https://utfs.io/f/2e5b4659-5490-4a86-81c8-a1ed82c06d77-x1zkue.png",
-      "url": "https://m4rrec0s.github.io/JavaScript/music-app/",
-      "technologies": ["HTML", "CSS", "JS", "JSON"]
-    },
-    {
-      "id": 5,
-      "name": "Age Calculator",
-      "description": "Uma calculadora de idade feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
-      "imgUrl": "https://utfs.io/f/08d00a05-4043-43b2-875b-f1e8f6f2fe57-vbtr6i.jpg",
-      "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/portifolio/age_calculator/",
-      "technologies": ["HTML", "CSS", "JS"]
+      "id": 9,
+      "name": "FSW food app",
+      "description": "Uma réplica do Ifood feita com Nextjs, Tailwindcss e TypeScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "https://utfs.io/f/8b675edc-f21a-4e20-a69b-48fbd5f93195-9pcde4.png",
+      "url": "https://fsw-food-app.vercel.app/",
+      "technologies": [
+        "Nextjs",
+        "Tailwindcss",
+        "TS",
+        "Prisma",
+        "PostgreSQL",
+        "Figma"
+      ]
     },
     {
       "id": 6,
@@ -32,11 +31,27 @@
       ]
     },
     {
+      "id": 4,
+      "name": "Spotify Replica",
+      "description": "Uma réplica do Spotify feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "https://utfs.io/f/2e5b4659-5490-4a86-81c8-a1ed82c06d77-x1zkue.png",
+      "url": "https://m4rrec0s.github.io/JavaScript/music-app/",
+      "technologies": ["HTML", "CSS", "JS", "JSON"]
+    },
+    {
       "id": 8,
       "name": "Login Screen",
       "description": "Tela de login feita com HTML, CSS e JavaScript. Com ele, desenvolvi habilidades de animação e responsividade usando o CSS e JavaScript.",
       "imgUrl": "https://utfs.io/f/f321a005-96a3-4e24-b10d-255f1f7237f5-1peull.png",
       "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/Pr%C3%A1tica/login/login.html",
+      "technologies": ["HTML", "CSS", "JS"]
+    },
+    {
+      "id": 5,
+      "name": "Age Calculator",
+      "description": "Uma calculadora de idade feita com HTML, CSS e JavaScript. O projeto foi feito com o intuito de praticar o desenvolvimento web e aprimorar minhas habilidades com as tecnologias utilizadas.",
+      "imgUrl": "https://utfs.io/f/08d00a05-4043-43b2-875b-f1e8f6f2fe57-vbtr6i.jpg",
+      "url": "https://m4rrec0s.github.io/HTML5-e-CSS3/portifolio/age_calculator/",
       "technologies": ["HTML", "CSS", "JS"]
     }
   ]
